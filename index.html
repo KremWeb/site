@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zavod — создание сайтов для малого бизнеса в Кременчуге</title>
+<meta name="description" content="Zavod — небольшая студия разработки сайтов из Кременчуга. Создаём сайты-визитки, лендинги и сайты компаний для малого бизнеса: от идеи до публикации в интернете.">
+<meta name="keywords" content="создание сайтов, разработка сайтов, сайты для бизнеса, создание сайтов Кременчуг">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://your-username.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zavod — создание сайтов для малого бизнеса">
+<meta property="og:description" content="Собираем современные сайты для малого бизнеса — от идеи до публикации в интернете. Студия из Кременчуга.">
+<meta property="og:url" content="https://your-username.github.io/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Zavod">
+
+<!-- Favicon (simple inline SVG, no external file needed) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2312151A'/%3E%3Cpath d='M8 22V10l8 6 8-6v12' stroke='%23FF6B35' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<!-- Fonts: Unbounded for display, Manrope for body — both support Cyrillic -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Skip link for keyboard/screen-reader users -->
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header__row">
+    <a href="#top" class="logo" aria-label="Zavod — на главную">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 18V8l8 5 8-5v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="logo__text">Zavod</span>
+    </a>
+
+    <nav class="nav" id="primary-nav" aria-label="Основная навигация">
+      <ul class="nav__list">
+        <li><a href="#top" class="nav__link">Главная</a></li>
+        <li><a href="#services" class="nav__link">Услуги</a></li>
+        <li><a href="#works" class="nav__link">Работы</a></li>
+        <li><a href="#about" class="nav__link">О нас</a></li>
+        <li><a href="#reviews" class="nav__link">Отзывы</a></li>
+        <li><a href="#contacts" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <a href="#request" class="btn btn--accent btn--sm header__cta">Обсудить проект</a>
+
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile nav -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация">
+    <ul>
+      <li><a href="#top" class="mobile-nav__link">Главная</a></li>
+      <li><a href="#services" class="mobile-nav__link">Услуги</a></li>
+      <li><a href="#works" class="mobile-nav__link">Работы</a></li>
+      <li><a href="#about" class="mobile-nav__link">О нас</a></li>
+      <li><a href="#reviews" class="mobile-nav__link">Отзывы</a></li>
+      <li><a href="#faq" class="mobile-nav__link">FAQ</a></li>
+      <li><a href="#contacts" class="mobile-nav__link">Контакты</a></li>
+    </ul>
+    <a href="#request" class="btn btn--accent mobile-nav__cta">Обсудить проект</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container hero__row">
+      <div class="hero__text">
+        <p class="hero__kicker">Студия из Кременчуга · сайты для малого бизнеса</p>
+        <h1 class="hero__title">Создаём сайты, которые&nbsp;помогают бизнесу расти</h1>
+        <p class="hero__sub">Современные сайты для малого бизнеса — от идеи до публикации в интернете. Разрабатываем сайты-визитки, лендинги и сайты компаний вручную, без конструкторов и шаблонных решений.</p>
+        <div class="hero__actions">
+          <a href="#request" class="btn btn--accent">Обсудить проект</a>
+          <a href="#works" class="btn btn--ghost">Наши работы</a>
+        </div>
+        <dl class="hero__stats">
+          <div><dt>2</dt><dd>разработчика в команде</dd></div>
+          <div><dt>&lt;3с</dt><dd>среднее время загрузки</dd></div>
+          <div><dt>100%</dt><dd>адаптивная вёрстка</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero__diagram" aria-hidden="true">
+        <svg id="assembly-svg" viewBox="0 0 360 380" fill="none">
+          <!-- blueprint grid -->
+          <g class="bp-grid" stroke="#2A323C" stroke-width="1">
+            <path d="M0 40H360M0 120H360M0 200H360M0 280H360M0 360H360"/>
+            <path d="M40 0V380M120 0V380M200 0V380M280 0V380M340 0V380"/>
+          </g>
+          <!-- assembled "site" blocks, animated stacking -->
+          <g class="bp-blocks">
+            <rect class="bp-block" x="70" y="290" width="220" height="50" rx="6" stroke="#FF6B35" stroke-width="2"/>
+            <rect class="bp-block" x="70" y="220" width="220" height="55" rx="6" stroke="#EDEFF2" stroke-width="1.6"/>
+            <rect class="bp-block" x="70" y="150" width="140" height="55" rx="6" stroke="#EDEFF2" stroke-width="1.6"/>
+            <rect class="bp-block" x="220" y="150" width="70" height="55" rx="6" stroke="#EDEFF2" stroke-width="1.6"/>
+            <rect class="bp-block" x="70" y="90" width="220" height="45" rx="6" stroke="#FF6B35" stroke-width="2"/>
+          </g>
+          <circle class="bp-dot" cx="70" cy="90" r="3" fill="#FF6B35"/>
+          <circle class="bp-dot" cx="290" cy="340" r="3" fill="#FF6B35"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Услуги</h2>
+        <p class="section__sub">Берём проект на любом этапе — от первого сайта-визитки до редизайна и подготовки к продвижению.</p>
+      </div>
+
+      <div class="cards cards--services">
+
+        <article class="card card--service">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><rect x="5" y="7" width="22" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M5 12h22M10 18h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3 class="card__title">Сайт-визитка</h3>
+          <p class="card__text">Компактный сайт с информацией об услугах, контактами и вашим стилем — чтобы клиенты находили вас в интернете.</p>
+          <p class="card__result"><strong>Результат:</strong> 1 страница, готова за несколько дней.</p>
+          <button class="card__more" data-modal="modal-service-1">Подробнее</button>
+        </article>
+
+        <article class="card card--service">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M4 26 12 6h8l8 20" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 18h14" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <h3 class="card__title">Лендинг</h3>
+          <p class="card__text">Одностраничный сайт под конкретное предложение — акцию, товар или услугу, с фокусом на заявки.</p>
+          <p class="card__result"><strong>Результат:</strong> страница с формой заявки и понятным призывом к действию.</p>
+          <button class="card__more" data-modal="modal-service-2">Подробнее</button>
+        </article>
+
+        <article class="card card--service">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="5" width="24" height="22" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 12h24" stroke="currentColor" stroke-width="1.6"/><path d="M11 5v22" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <h3 class="card__title">Сайт компании</h3>
+          <p class="card__text">Многостраничный сайт со структурой из разделов: услуги, о компании, портфолио, контакты.</p>
+          <p class="card__result"><strong>Результат:</strong> 4–8 страниц с единой навигацией и стилем.</p>
+          <button class="card__more" data-modal="modal-service-3">Подробнее</button>
+        </article>
+
+        <article class="card card--service">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="6" width="10" height="10" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="18" y="6" width="10" height="10" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="20" width="10" height="6" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="18" y="20" width="10" height="6" rx="1.5" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <h3 class="card__title">Каталог услуг/товаров</h3>
+          <p class="card__text">Структурированный список товаров или услуг с категориями, фильтрами и карточками.</p>
+          <p class="card__result"><strong>Результат:</strong> удобная витрина, которую легко пополнять.</p>
+          <button class="card__more" data-modal="modal-service-4">Подробнее</button>
+        </article>
+
+        <article class="card card--service">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M6 26V6h20v14l-6 6H6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M20 20v6l6-6h-6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="card__title">Редизайн сайта</h3>
+          <p class="card__text">Обновляем внешний вид, структуру и скорость существующего сайта без потери контента и позиций.</p>
+          <p class="card__result"><strong>Результат:</strong> современный вид и лучшая скорость загрузки.</p>
+          <button class="card__more" data-modal="modal-service-5">Подробнее</button>
+        </article>
+
+        <article class="card card--service">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M20.5 20.5 27 27" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3 class="card__title">Подготовка сайта к Google</h3>
+          <p class="card__text">Базовая SEO-настройка: заголовки, метатеги, скорость, карта сайта — чтобы вас находили в поиске.</p>
+          <p class="card__result"><strong>Результат:</strong> сайт технически готов к индексации.</p>
+          <button class="card__more" data-modal="modal-service-6">Подробнее</button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORKS ============ -->
+  <section class="section section--alt" id="works">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Наши работы</h2>
+        <p class="section__sub">Демонстрационные проекты, которые показывают наш подход к разным типам бизнеса. Реальные кейсы будем добавлять по мере работы с клиентами.</p>
+      </div>
+
+      <div class="cards cards--works">
+
+        <article class="card card--work" data-modal="modal-work-1" tabindex="0" role="button" aria-label="Открыть проект: Сайт СТО">
+          <div class="card__preview card__preview--1" aria-hidden="true">
+            <span class="card__preview-label">СТО</span>
+          </div>
+          <span class="badge badge--demo">Демонстрационный проект</span>
+          <h3 class="card__title">Сайт автосервиса</h3>
+          <p class="card__text">Каталог услуг, запись на ремонт и прайс — для станции техобслуживания.</p>
+        </article>
+
+        <article class="card card--work" data-modal="modal-work-2" tabindex="0" role="button" aria-label="Открыть проект: Сайт детейлинга">
+          <div class="card__preview card__preview--2" aria-hidden="true">
+            <span class="card__preview-label">Detailing</span>
+          </div>
+          <span class="badge badge--demo">Демонстрационный проект</span>
+          <h3 class="card__title">Сайт студии детейлинга</h3>
+          <p class="card__text">Портфолио работ до/после, услуги и онлайн-запись на обработку авто.</p>
+        </article>
+
+        <article class="card card--work" data-modal="modal-work-3" tabindex="0" role="button" aria-label="Открыть проект: Сайт барбершопа">
+          <div class="card__preview card__preview--3" aria-hidden="true">
+            <span class="card__preview-label">Barber</span>
+          </div>
+          <span class="badge badge--demo">Демонстрационный проект</span>
+          <h3 class="card__title">Сайт барбершопа</h3>
+          <p class="card__text">Стильная одностраничная витрина с прайсом, мастерами и записью.</p>
+        </article>
+
+        <article class="card card--work" data-modal="modal-work-4" tabindex="0" role="button" aria-label="Открыть проект: Сайт магазина">
+          <div class="card__preview card__preview--4" aria-hidden="true">
+            <span class="card__preview-label">Shop</span>
+          </div>
+          <span class="badge badge--demo">Демонстрационный проект</span>
+          <h3 class="card__title">Сайт небольшого магазина</h3>
+          <p class="card__text">Каталог товаров с категориями и карточками, удобный для мобильных.</p>
+        </article>
+
+        <article class="card card--work" data-modal="modal-work-5" tabindex="0" role="button" aria-label="Открыть проект: Сайт строительной компании">
+          <div class="card__preview card__preview--5" aria-hidden="true">
+            <span class="card__preview-label">Build</span>
+          </div>
+          <span class="badge badge--demo">Демонстрационный проект</span>
+          <h3 class="card__title">Сайт строительной компании</h3>
+          <p class="card__text">Портфолио объектов, услуги и заявка на расчёт стоимости работ.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container about__row">
+      <div class="about__text">
+        <h2 class="section__title">О нас</h2>
+        <p>Zavod — небольшая команда из двух начинающих разработчиков из Кременчуга. Мы делаем сайты для малого бизнеса: от первой визитки в интернете до сайта компании с каталогом услуг.</p>
+        <p>Работаем без посредников и без лишней бюрократии — вы общаетесь напрямую с теми, кто пишет код и собирает дизайн вашего сайта.</p>
+      </div>
+
+      <div class="about__why">
+        <h3 class="about__why-title">Почему выбирают нас</h3>
+        <ul class="why-list">
+          <li><span class="why-list__icon" aria-hidden="true">01</span>Современный дизайн под задачу бизнеса</li>
+          <li><span class="why-list__icon" aria-hidden="true">02</span>Адаптация под смартфоны и планшеты</li>
+          <li><span class="why-list__icon" aria-hidden="true">03</span>Быстрая загрузка страниц</li>
+          <li><span class="why-list__icon" aria-hidden="true">04</span>Понятная структура без лишних разделов</li>
+          <li><span class="why-list__icon" aria-hidden="true">05</span>Базовая SEO-оптимизация с первого дня</li>
+          <li><span class="why-list__icon" aria-hidden="true">06</span>Сопровождение после публикации сайта</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section section--alt" id="process">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Процесс работы</h2>
+        <p class="section__sub">Четыре станции сборки — от первого разговора до готового сайта в интернете.</p>
+      </div>
+
+      <ol class="line">
+        <li class="line__item">
+          <span class="line__num">01</span>
+          <h3 class="line__title">Обсуждаем задачу</h3>
+          <p class="line__text">Разбираем, что нужно бизнесу: цель сайта, структура, сроки и бюджет.</p>
+        </li>
+        <li class="line__item">
+          <span class="line__num">02</span>
+          <h3 class="line__title">Создаём дизайн</h3>
+          <p class="line__text">Прорабатываем визуальный стиль, структуру страниц и адаптацию под мобильные.</p>
+        </li>
+        <li class="line__item">
+          <span class="line__num">03</span>
+          <h3 class="line__title">Разрабатываем сайт</h3>
+          <p class="line__text">Вёрстка, интерактивные элементы, базовая SEO-настройка и проверка на разных устройствах.</p>
+        </li>
+        <li class="line__item">
+          <span class="line__num">04</span>
+          <h3 class="line__title">Публикуем и передаём</h3>
+          <p class="line__text">Размещаем сайт в интернете, подключаем домен и передаём вам все материалы.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Отзывы</h2>
+        <p class="section__sub">Пока это демонстрационные примеры того, как будут выглядеть отзывы клиентов. Заменим на настоящие по мере работы над проектами.</p>
+      </div>
+
+      <div class="cards cards--reviews">
+        <article class="card card--review">
+          <span class="badge badge--demo">Демо-отзыв</span>
+          <p class="card__quote">«Сайт получился именно таким, каким мы его представляли: просто, понятно, и клиенты стали чаще писать в Telegram».</p>
+          <p class="card__author">Владелец барбершопа <span>(демонстрационный пример)</span></p>
+        </article>
+        <article class="card card--review">
+          <span class="badge badge--demo">Демо-отзыв</span>
+          <p class="card__quote">«Понравилось, что весь процесс объясняли простыми словами, без технического жаргона. Сайт загрузили сами через несколько дней».</p>
+          <p class="card__author">Владелица магазина <span>(демонстрационный пример)</span></p>
+        </article>
+        <article class="card card--review">
+          <span class="badge badge--demo">Демо-отзыв</span>
+          <p class="card__quote">«Сделали сайт для СТО с прайсом и формой записи — стало проще принимать заявки, не отвечая на одни и те же вопросы по телефону».</p>
+          <p class="card__author">Руководитель автосервиса <span>(демонстрационный пример)</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section--alt" id="faq">
+    <div class="container container--narrow">
+      <div class="section__head">
+        <h2 class="section__title">Частые вопросы</h2>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Сколько стоит сайт?</span>
+            <span class="accordion__icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion__panel">
+            <p>Стоимость зависит от типа сайта и объёма работ — сайт-визитка и сайт компании с каталогом стоят по-разному. Точную цену называем после обсуждения задачи.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Сколько времени занимает создание?</span>
+            <span class="accordion__icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion__panel">
+            <p>Простой сайт-визитка — от нескольких дней. Сайт компании с несколькими разделами — от полутора до трёх недель, в зависимости от объёма контента.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Можно ли сделать сайт для телефона?</span>
+            <span class="accordion__icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion__panel">
+            <p>Да, все сайты, которые мы делаем, изначально адаптированы под смартфоны и планшеты — это часть стандартной работы, а не отдельная опция.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Можно ли подключить собственный домен?</span>
+            <span class="accordion__icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion__panel">
+            <p>Да, готовый сайт можно разместить на вашем домене. Поможем разобраться с подключением, если это понадобится.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Помогаете ли вы с Google?</span>
+            <span class="accordion__icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion__panel">
+            <p>Да, делаем базовую SEO-настройку: заголовки, метаописания, карту сайта и структуру, понятную поисковым системам.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Можно ли потом изменить сайт?</span>
+            <span class="accordion__icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion__panel">
+            <p>Да, после публикации мы остаёмся на связи и можем вносить правки или добавлять новые разделы по договорённости.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REQUEST FORM ============ -->
+  <section class="section" id="request">
+    <div class="container container--narrow">
+      <div class="section__head">
+        <h2 class="section__title">Оставить заявку</h2>
+        <p class="section__sub">Расскажите немного о задаче — ответим и обсудим детали.</p>
+      </div>
+
+      <!--
+        ФОРМА: сейчас работает в демонстрационном режиме (без backend).
+        Чтобы подключить реальную отправку заявок, выберите один из вариантов:
+          1) Formspree — добавьте action="https://formspree.io/f/ВАШ_ID" и метод POST,
+             уберите preventDefault() в script.js для этой формы.
+          2) EmailJS — подключите их SDK через <script> и вызовите emailjs.sendForm(...)
+             внутри обработчика отправки в script.js (см. комментарии там же).
+          3) Свой backend — замените fetch-заглушку в script.js на реальный запрос.
+      -->
+      <form class="form" id="request-form" novalidate>
+        <div class="form__row">
+          <label class="form__label" for="f-name">Имя</label>
+          <input class="form__input" type="text" id="f-name" name="name" autocomplete="name" required>
+          <span class="form__error" id="err-name"></span>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label" for="f-phone">Телефон</label>
+          <input class="form__input" type="tel" id="f-phone" name="phone" autocomplete="tel" placeholder="+380 XX XXX XX XX" required>
+          <span class="form__error" id="err-phone"></span>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label" for="f-contact">Telegram / другой способ связи</label>
+          <input class="form__input" type="text" id="f-contact" name="contact" placeholder="@username или email">
+        </div>
+
+        <div class="form__row">
+          <label class="form__label" for="f-type">Тип сайта</label>
+          <select class="form__input" id="f-type" name="type">
+            <option value="Сайт-визитка">Сайт-визитка</option>
+            <option value="Лендинг">Лендинг</option>
+            <option value="Сайт компании">Сайт компании</option>
+            <option value="Каталог">Каталог услуг/товаров</option>
+            <option value="Редизайн">Редизайн существующего сайта</option>
+            <option value="Другое">Другое</option>
+          </select>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label" for="f-message">Сообщение</label>
+          <textarea class="form__input" id="f-message" name="message" rows="4" placeholder="Коротко о задаче"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--accent form__submit">Отправить заявку</button>
+        <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTS ============ -->
+  <section class="section section--alt" id="contacts">
+    <div class="container">
+      <div class="contacts">
+        <div class="contacts__text">
+          <h2 class="section__title">Контакты</h2>
+          <p class="section__sub">Пишите удобным способом — отвечаем в течение дня.</p>
+        </div>
+        <ul class="contacts__list">
+          <li>
+            <span class="contacts__label">Telegram</span>
+            <a class="contacts__value" id="contact-telegram" href="#" data-config="telegramUrl">@your_username</a>
+          </li>
+          <li>
+            <span class="contacts__label">Телефон</span>
+            <a class="contacts__value" id="contact-phone" href="#" data-config="phoneHref">+380 XX XXX XX XX</a>
+          </li>
+          <li>
+            <span class="contacts__label">Email</span>
+            <a class="contacts__value" id="contact-email" href="#" data-config="emailHref">hello@example.com</a>
+          </li>
+          <li>
+            <span class="contacts__label">Instagram</span>
+            <a class="contacts__value" id="contact-instagram" href="#" data-config="instagramUrl">@your_instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__row">
+    <div class="footer__brand">
+      <span class="logo logo--footer">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 18V8l8 5 8-5v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="logo__text">Zavod</span>
+      </span>
+      <p class="footer__desc">Небольшая студия разработки сайтов для малого бизнеса. Кременчуг, Украина.</p>
+    </div>
+
+    <nav class="footer__links" aria-label="Разделы сайта">
+      <a href="#services">Услуги</a>
+      <a href="#works">Работы</a>
+      <a href="#about">О нас</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="footer__social">
+      <a href="#" id="footer-telegram" data-config="telegramUrl">Telegram</a>
+      <a href="#" id="footer-instagram" data-config="instagramUrl">Instagram</a>
+      <a href="#" id="footer-email" data-config="emailHref">Email</a>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>&copy; 2026 Zavod. Все права защищены.</p>
+    <button class="footer__policy" data-modal="modal-privacy">Политика конфиденциальности</button>
+  </div>
+</footer>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="to-top" id="to-top" aria-label="Наверх">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ============ MODALS ============ -->
+<div class="modal-overlay" id="modal-overlay">
+
+  <div class="modal" id="modal-service-1" role="dialog" aria-modal="true" aria-labelledby="ms1-title" hidden>
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <h3 id="ms1-title" class="modal__title">Сайт-визитка</h3>
+    <p>Небольшой сайт на одну страницу с главной информацией о вашем деле: чем вы занимаетесь, что предлагаете и как с вами связаться.</p>
+    <p><strong>Подходит:</strong> мастерам, частным специалистам, небольшим локальным бизнесам, которым нужно присутствие в интернете без лишней сложности.</p>
+    <p><strong>Что входит:</strong> адаптивная вёрстка, форма связи, карта или контакты, базовая SEO-настройка.</p>
+  </div>
+
+  <div class="modal" id="modal-service-2" role="dialog" aria-modal="true" aria-labelledby="ms2-title" hidden>
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <h3 id="ms2-title" class="modal__title">Лендинг</h3>
+    <p>Одностраничный сайт, заточенный под одно конкретное предложение — товар, услугу или акцию.</p>
+    <p><strong>Подходит:</strong> запуску нового продукта, сезонной акции, сбору заявок на конкретную услугу.</p>
+    <p><strong>Что входит:</strong> структура с блоками убеждения, форма заявки, адаптивная вёрстка, аналитика при необходимости.</p>
+  </div>
+
+  <div class="modal" id="modal-service-3" role="dialog" aria-modal="true" aria-labelledby="ms3-title" hidden>
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <h3 id="ms3-title" class="modal__title">Сайт компании</h3>
+    <p>Многостраничный сайт с разделами под разные задачи: услуги, о компании, портфолио, контакты и другие.</p>
+    <p><strong>Подходит:</strong> компаниям, которым нужно подробно рассказать о себе и своих услугах.</p>
+    <p><strong>Что входит:</strong> 4–8 страниц, единая структура навигации, формы обратной связи, базовая SEO-настройка.</p>
+  </div>
+
+  <div class="modal" id="modal-service-4" role="dialog" aria-modal="true" aria-labelledby="ms4-title" hidden>
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <h3 id="ms4-title" class="modal__title">Каталог услуг/товаров</h3>
+    <p>Структурированная витрина с карточками услуг или товаров, категориями и фильтрами.</p>
+    <p><strong>Подходит:</strong> магазинам и сервисам с широким ассортиментом, который нужно удобно показать.</p>
+    <p><strong>Что входит:</strong> карточки товаров/услуг, категории, поиск или фильтры, удобное добавление новых позиций.</p>
+  </div>
+
+  <div class="modal" id="modal-service-5" role="dialog" aria-modal="true" aria-labelledby="ms5-title" hidden>
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <h3 id="ms5-title" class="modal__title">Редизайн существующего сайта</h3>
+    <p>Обновляем внешний вид, структуру и скорость работы существующего сайта, сохраняя его контент и позиции в поиске.</p>
+    <p><strong>Подходит:</strong> сайтам, которые выглядят устаревшими или медленно работают на телефонах.</p>
+    <p><strong>Что входит:</strong> аудит текущего сайта, новый дизайн, перенос контента, оптимизация скорости.</p>
+  </div>
+
+  <div class="modal" id="modal-service-6" role="dialog" aria-modal="true" aria-labelledby="ms6-title" hidden>
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <h3 id="ms6-title" class="modal__title">Подготовка сайта к Google</h3>
+    <p>Приводим технические и текстовые параметры сайта в порядок, чтобы поисковые системы могли его правильно проиндексировать.</p>
+    <p><strong>Подходит:</strong> готовым сайтам, которые ещё не появляются в поиске или появляются плохо.</p>
+    <p><strong>Что входит:</strong> заголовки и метаописания, структура H1–H3, карта сайта, robots.txt, базовая скорость загрузки.</p>
+  </div>
+
+  <div class="modal modal--work" id="modal-work-1" role="dialog" aria-modal="true" aria-labelledby="mw1-title" hidden>
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <span class="badge badge--demo">Демонстрационный проект</span>
+    <h3 id="mw1-title" class="modal__title">Сайт автосервиса</h3>
+    <p><strong>Задача:</strong> показать список услуг СТО с ценами и дать клиентам возможность быстро записаться на ремонт.</p>
+    <p><strong>Решение:</strong> одностраничный сайт с прайсом, формой записи и блоком с адресом и часами работы.</p>
+    <button class="btn btn--ghost btn--sm modal__project-btn" data-demo-link>Открыть проект</button>
+  </div>
+
+  <div class="modal modal--work" id="modal-work-2" role="dialog" aria-modal="true" aria-labelledby="mw2-title" hidden>
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <span class="badge badge--demo">Демонстрационный проект</span>
+    <h3 id="mw2-title" class="modal__title">Сайт студии детейлинга</h3>
+    <p><strong>Задача:</strong> визуально показать качество работы студии и собирать заявки на обработку авто.</p>
+    <p><strong>Решение:</strong> сайт с галереей до/после, перечнем услуг и формой онлайн-записи.</p>
+    <button class="btn btn--ghost btn--sm modal__project-btn" data-demo-link>Открыть проект</button>
+  </div>
+
+  <div class="modal modal--work" id="modal-work-3" role="dialog" aria-modal="true" aria-labelledby="mw3-title" hidden>
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <span class="badge badge--demo">Демонстрационный проект</span>
+    <h3 id="mw3-title" class="modal__title">Сайт барбершопа</h3>
+    <p><strong>Задача:</strong> стильная витрина для барбершопа с прайсом и записью к мастеру.</p>
+    <p><strong>Решение:</strong> одностраничный сайт с портфолио мастеров, прайсом и кнопкой записи.</p>
+    <button class="btn btn--ghost btn--sm modal__project-btn" data-demo-link>Открыть проект</button>
+  </div>
+
+  <div class="modal modal--work" id="modal-work-4" role="dialog" aria-modal="true" aria-labelledby="mw4-title" hidden>
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <span class="badge badge--demo">Демонстрационный проект</span>
+    <h3 id="mw4-title" class="modal__title">Сайт небольшого магазина</h3>
+    <p><strong>Задача:</strong> удобно показать ассортимент товаров и упростить связь с покупателями.</p>
+    <p><strong>Решение:</strong> каталог с категориями, карточками товаров и адаптацией под мобильные устройства.</p>
+    <button class="btn btn--ghost btn--sm modal__project-btn" data-demo-link>Открыть проект</button>
+  </div>
+
+  <div class="modal modal--work" id="modal-work-5" role="dialog" aria-modal="true" aria-labelledby="mw5-title" hidden>
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <span class="badge badge--demo">Демонстрационный проект</span>
+    <h3 id="mw5-title" class="modal__title">Сайт строительной компании</h3>
+    <p><strong>Задача:</strong> показать реализованные объекты и собирать заявки на расчёт стоимости работ.</p>
+    <p><strong>Решение:</strong> сайт с портфолио объектов, описанием услуг и формой заявки на расчёт.</p>
+    <button class="btn btn--ghost btn--sm modal__project-btn" data-demo-link>Открыть проект</button>
+  </div>
+
+  <div class="modal" id="modal-privacy" role="dialog" aria-modal="true" aria-labelledby="mp-title" hidden>
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <h3 id="mp-title" class="modal__title">Политика конфиденциальности</h3>
+    <p>Это страница-заглушка. Здесь будет размещена полная политика конфиденциальности студии Zavod: какие данные собираются через форму заявки, как они используются и хранятся.</p>
+    <p>Замените этот текст на реальную политику перед публикацией сайта, если сайт будет собирать персональные данные пользователей.</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
