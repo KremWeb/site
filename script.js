@@ -6,14 +6,13 @@
    Все места на странице с data-config="..." обновятся автоматически.
    ========================================================================== */
 const CONFIG = {
-  telegramUrl: 'https://t.me/your_username',   // ссылка на Telegram
-  telegramLabel: '@your_username',             // как отображается текст
-  phoneHref: 'tel:+380000000000',              // номер в формате для звонка
-  phoneLabel: '+380 XX XXX XX XX',             // как отображается текст
+  telegramLabel: '@sities_ua',             // как отображается текст
+  phoneHref: 'tel:+380 66 385 06 63',              // номер в формате для звонка
+  phoneLabel: '+380 66 385 06 63',             // как отображается текст
   emailHref: 'mailto:hello@example.com',
   emailLabel: 'hello@example.com',
-  instagramUrl: 'https://instagram.com/your_instagram',
-  instagramLabel: '@your_instagram',
+  instagramUrl: 'https://www.instagram.com/sities_ua?stkn=Y3o4MjMybWkyMDdr&utm_source=qr',
+  instagramLabel: '@',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
